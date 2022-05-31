@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import '../styles/style.css';
 
 // General TODO List
 // Set up custom CSS to work.

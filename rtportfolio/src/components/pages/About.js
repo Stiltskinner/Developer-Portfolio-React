@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/style.css';
 // TODO: Add HTML and content to create actual about page
 export default function About() {
   return (

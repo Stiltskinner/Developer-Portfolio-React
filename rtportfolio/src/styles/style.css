@@ -1,0 +1,146 @@
+/* Variables */
+:root {
+    --dgray: #303438;
+    --eggshell: #f7f9fc;
+    --lblue: rgb(121, 174, 196);
+  }
+/* Universal */
+body {
+    font-family: "Roboto Slab", "Roboto", serif;
+    color:var(--eggshell);
+    background-color: var(--dgray);
+    box-sizing:border-box;
+    width:100%;
+    max-width:100%;
+}
+
+/* Header */
+header {
+    background-color: var(--lblue);
+}
+
+header > * {
+    background-color: var(--lblue);
+}
+
+.nav-link {
+    color:var(--dgray);
+    font-size:135%;
+}
+
+/* Images */
+.lg-proj-container {
+    max-height:25em;
+    transition: all 0.3s ease-in-out;
+    overflow:hidden;
+    object-fit: contain;
+}
+
+.lg-proj-container:hover {
+    box-shadow: inset 0px 0px 12px
+    rgb(96, 202, 235), 0 0 15px
+    rgb(138, 102, 236);
+}
+
+.lg-proj-container img {
+    height:100%;
+    object-fit: contain;
+}
+
+.proj-container {
+    width:49%;
+    max-height:25em;
+    transition: all 0.3s ease-in-out;
+    overflow:hidden;
+}
+
+.proj-container:hover {
+    box-shadow: inset 0px 0px 12px
+    rgb(96, 202, 235), 0 0 15px
+    rgb(138, 102, 236);
+}
+
+.proj-container img {
+    object-fit: cover;
+}
+
+/* Link styling */
+.textlinks { 
+    display: flex;
+    position:absolute;
+    font-size:20px;
+    font-weight:bold;
+    background-color: var(--lblue);
+    color:var(--dgray);
+    height: 2em;
+    margin-top:.5em;
+    }
+
+/* Colors */
+
+.dark-back {
+    background-color: var(--dgray);
+}
+
+.light-back {
+    background-color: var(--eggshell);
+}
+
+/* Borders */
+.blueborder {
+    border:5px;
+    border-style:solid;
+    border-color:var(--lblue);
+    }
+
+.border-egg {
+    border-color:var(--eggshell);
+}
+
+@media screen and (min-width: 0px) {
+    main {
+        flex-direction:column;
+    }
+    .border-egg {
+        border-style: none;
+    }
+    .textlinks { 
+        display: flex;
+        position:absolute;
+        font-size:11px;
+        font-weight:bold;
+        background-color: var(--lblue);
+        color:var(--dgray);
+        height: 1em;
+        margin-top:.5em;
+        align-items: center;
+        }
+    .contact-link {
+        color:var(--eggshell);
+        font-size:100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .border-egg {
+        border-right: 3px;
+        border-style: solid;
+    }
+
+    .textlinks { 
+        display: flex;
+        position:absolute;
+        font-size:20px;
+        font-weight:bold;
+        background-color: var(--lblue);
+        color:var(--dgray);
+        height: 2em;
+        margin-top:.5em;
+        align-items: center;
+        }
+
+    .contact-link {
+        color:var(--eggshell);
+        font-size:135%;
+    }
+}

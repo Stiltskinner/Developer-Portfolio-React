@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/style.css';
 // TODO Add HTML and content to make Resume/skills list, replace blog with resume
 export default function Blog() {
   return (
