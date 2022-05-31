@@ -1,5 +1,5 @@
 import React from 'react';
-
+// TODO: Replace Home with Portfolio, add HTML to actually have a portfolio
 export default function Home() {
   return (
     <div>

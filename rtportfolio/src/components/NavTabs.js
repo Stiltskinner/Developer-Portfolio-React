@@ -2,6 +2,8 @@ import React from 'react';
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
+// TODO: Add a header and put all the navigation stuff inside of it
+// TODO: Replace home with portfolio, replace blog with resume
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <ul className="nav nav-tabs">

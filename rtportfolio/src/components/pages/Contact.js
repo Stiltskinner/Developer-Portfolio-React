@@ -1,5 +1,5 @@
 import React from 'react';
-
+// TODO: Add an actual contact form
 export default function Contact() {
   return (
     <div>
