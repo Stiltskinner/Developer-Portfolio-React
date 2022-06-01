@@ -6,6 +6,7 @@ import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
+import Footer from './Footer';
 
 // General TODO List
 // Set up custom CSS to work.
@@ -42,8 +43,6 @@ export default function PortfolioContainer() {
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
+      <Footer />
     </div>
-  );
-}
-
-// TODO return a footer component that includes github, linkedin, and twitter profiles.
+  )};

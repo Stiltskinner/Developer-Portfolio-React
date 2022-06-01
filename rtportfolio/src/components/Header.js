@@ -7,9 +7,9 @@ import React from 'react';
 function Header({ currentPage, handlePageChange }) {
   return (
 <header className="p-3 mb-3 border-bottom">
-    <div className="d-flex flex-wrap align-items-center justify-content-start">
+    <div className="d-flex flex-wrap align-items-center justify-content-center">
         <div className='col-3 px-2'><h1 className='text-start'>Ryan Thomas</h1></div>
-    <ul className="col-6 nav nav-tabs">
+    <ul className="col-8 nav nav-tabs">
       <li className="nav-item mx-auto">
         <a
           href="#about"
