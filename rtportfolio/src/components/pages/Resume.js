@@ -1,24 +1,42 @@
-import React from 'react';
+import React from "react";
+import RTResume from "../Assets/RTResume.pdf";
 // TODO Add HTML and content to make Resume/skills list, replace blog with resume
 export default function Resume() {
   return (
-    <div>
-      <h1>Resume</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
-    </div>
+    <section
+      className="container-fluid row justify-content-center align-items-start mb-3 vw-100"
+      id="sec-Resume"
+      title="Resume"
+    >
+      <a className="header-link" href={RTResume}>
+        <h2 className="text-center col-12">Resume</h2>
+      </a>
+      <div className="d-flex row col-lg-10 col-md-6 col-12 align-self-center">
+        <h3 className="text-center col-12 my-2">Technical Skills</h3>
+        <div className="lead text-center my-3 text-default col-4">
+          <p className="fw-bold">Applications/Deployment</p>
+          <p>
+            VSCode | Heroku | MySQL Workbench | Insomnia | MongoDB | SQL 
+          </p>
+        </div>
+        <div className="lead text-center my-3 text-default col-4">
+          <p className="fw-bold">Languages, Libraries, Frameworks</p>
+          <p>
+          Javascript | HTML5 | CSS3 | jQuery |
+          jQueryUI | Bootstrap | Handlebars | Node.js | Express.js | Sequelize |
+          Git | Mongoose | NoSQL | GraphQL | React.js
+          </p>
+        </div>
+        <div className="lead text-center my-3 text-default col-4">
+          <p className="fw-bold">Concepts</p>
+          <p>
+          RESTful APIs | MVC Model | CRUD Operations | Object-Oriented Programming
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }
+
+// Technical Skills
+// __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________

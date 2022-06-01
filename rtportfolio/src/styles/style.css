@@ -5,6 +5,7 @@
     --watermelon: #FF3B3F;
     --neutral: #EFEFEF;
     --slate: #343232;
+    --lgray: #cfcaca;
   }
 /* Universal */
 body {
@@ -91,6 +92,17 @@ footer {
     margin-top:.5em;
     }
 
+.header-link {
+        color:var(--slate);
+        font-size:135%;
+        text-decoration: none;
+}
+
+.header-link:hover {
+    color: var(--watermelon);
+
+}
+
 /* Font Styling */
 .text-default {
     font-size: 150%;
@@ -98,8 +110,8 @@ footer {
 
 /* Colors */
 
-.dark-back {
-    background-color: var(--carbon);
+.lgray-back {
+    background-color: var(--lgray);
 }
 
 .light-back {
