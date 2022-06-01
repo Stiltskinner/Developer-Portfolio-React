@@ -1,16 +1,36 @@
-import React from "react";
+// import React from "react";
 
-export default function Project(props) {
-    return (
-        // Container for entire project card
-<div class="card col-lg-4 col-10">
-  <img src='./Assets/images/pigLogo.png' class="card-img" alt="Pig E-Bank Logo"/>
-  <div class="card-img-overlay">
-    <h5 class="card-title">Pig E-Bank</h5>
-    <p class="card-text">A Budgeting App Powered by SQL</p>
-    <a href="https://github.com/Stiltskinner/Pig-E-Bank" class="btn btn-primary">Github</a>
-  </div>
-  <a href="https://infinite-falls-27891.herokuapp.com/" class="btn btn-primary">Deployed App</a>
-  </div>
-    )
-}
+// export default function Project(props) {
+//   return (
+//     // Container for entire project card
+//     <div className="container-fluid card col-lg-4 col-10">
+//       <img src={pigLogo} className="card-img" alt="Pig E-Bank Logo" />
+//       <div className="container-fluid card-img-overlay justify-content-center">
+//         <div className="col-4 mx-auto">
+//           <h2 className="card-title text-center col-12 sky-back">
+//             <a
+//               className="nav-link fs-4"
+//               href="https://infinite-falls-27891.herokuapp.com/"
+//               target="_blank"
+//               rel="noreferrer"
+//             >
+//               Pig E-Bank
+//             </a>
+//           </h2>
+//         </div>
+//         <p className="card-text col-5 mx-auto ">
+//           A Budgeting App Powered by SQL
+//         </p>
+//         <div className="col-1 mx-auto">
+//           <a
+//             href="https://github.com/Stiltskinner/Pig-E-Bank"
+//             target="_blank"
+//             rel="noreferrer"
+//           >
+//             <img src={gitHubLogo} />
+//           </a>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
