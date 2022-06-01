@@ -1,21 +1,20 @@
-import React from 'react';
-// TODO: Replace Home with Portfolio, add HTML to actually have a portfolio
+import React from "react";
+import pigLogo from "../Assets/images/pigLogo.png";
+import gitHubLogo from "../Assets/images/GitHub-Mark-32px.png"
+
 export default function Home() {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
+    <div className="card col-lg-4 col-10">
+      <img src={pigLogo} className="card-img" alt="Pig E-Bank Logo" />
+      <div className="card-img-overlay">
+        <h2 className="card-title">Pig E-Bank</h2>
+        <p className="card-text">A Budgeting App Powered by SQL</p>
+        <a
+          href="https://github.com/Stiltskinner/Pig-E-Bank" target="_blank" rel="noreferrer"
+        >
+          <img src={gitHubLogo}/>
+        </a>
+      </div>
     </div>
   );
 }
