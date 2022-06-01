@@ -8,8 +8,9 @@ export default function Resume() {
       id="sec-Resume"
       title="Resume"
     >
-      <a className="header-link" href={RTResume}>
         <h2 className="text-center col-12">Resume</h2>
+        <a className="d-flex header-link flex-wrap justify-content-center col-3" href={RTResume} download>
+          <p className="text-center">Click to download!</p>
       </a>
       <div className="d-flex row col-lg-10 col-md-7 col-12 align-self-center">
         <h3 className="text-center col-12 my-2 lgray-back">Technical Skills</h3>
@@ -72,7 +73,7 @@ University of Texas at Austin
       <h3 className="text-center col-12 my-2 lgray-back">Work Experience</h3>
       <div className="lead text-center my-3 text-default col-12">
           <div className="col-lg-4 col-12 mx-auto sky-back">
-          <h4 >English Team Leader, Teacher</h4>
+          <h4 className='fw-bold'>English Team Leader, Teacher</h4>
           <h4>
             Akins Early College High School 
           </h4>
@@ -94,7 +95,7 @@ University of Texas at Austin
         </div>
         <div className="lead text-center my-3 text-default col-12 ">
         <div className="col-lg-4 col-12 mx-auto sky-back">
-          <h4 >
+          <h4 className='fw-bold'>
 Presentations Coordinator, Writing Consultant
 </h4>
           <h4>
@@ -118,7 +119,7 @@ Presentations Coordinator, Writing Consultant
         </div>
         <div className="lead text-center my-3 text-default col-12">
         <div className="col-lg-4 col-12 mx-auto sky-back">
-          <h4 >
+          <h4 className='fw-bold'>
           Client Services Coordinator
 </h4>
           <h4>
@@ -142,7 +143,7 @@ Presentations Coordinator, Writing Consultant
         </div>
         <div className="lead text-center my-3 text-default col-12">
         <div className="col-lg-4 col-12 mx-auto sky-back">
-          <h4 >
+          <h4 className='fw-bold'>
           College Adviser
 </h4>
           <h4>
