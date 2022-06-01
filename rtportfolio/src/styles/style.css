@@ -1,14 +1,16 @@
 /* Variables */
 :root {
-    --dgray: #303438;
-    --eggshell: #f7f9fc;
-    --lblue: rgb(121, 174, 196);
+    --sky: #CAEBF2;
+    --carbon: #818080;
+    --watermelon: #FF3B3F;
+    --neutral: #EFEFEF;
+    --slate: #343232;
   }
 /* Universal */
 body {
     font-family: "Roboto Slab", "Roboto", serif;
-    color:var(--eggshell);
-    background-color: var(--dgray);
+    color:var(--slate);
+    background-color: var(--neutral);
     box-sizing:border-box;
     width:100%;
     max-width:100%;
@@ -16,16 +18,20 @@ body {
 
 /* Header */
 header {
-    background-color: var(--lblue);
+    background-color: var(--sky);
 }
 
 header > * {
-    background-color: var(--lblue);
+    background-color: var(--sky);
 }
 
 .nav-link {
-    color:var(--dgray);
+    color:var(--carbon);
     font-size:135%;
+}
+
+.nav-link:hover {
+    color: var(--watermelon);
 }
 
 /* Images */
@@ -70,8 +76,8 @@ header > * {
     position:absolute;
     font-size:20px;
     font-weight:bold;
-    background-color: var(--lblue);
-    color:var(--dgray);
+    background-color: var(--sky);
+    color:var(--carbon);
     height: 2em;
     margin-top:.5em;
     }
@@ -79,22 +85,22 @@ header > * {
 /* Colors */
 
 .dark-back {
-    background-color: var(--dgray);
+    background-color: var(--carbon);
 }
 
 .light-back {
-    background-color: var(--eggshell);
+    background-color: var(--neutral);
 }
 
 /* Borders */
 .blueborder {
     border:5px;
     border-style:solid;
-    border-color:var(--lblue);
+    border-color:var(--sky);
     }
 
 .border-egg {
-    border-color:var(--eggshell);
+    border-color:var(--neutral);
 }
 
 @media screen and (min-width: 0px) {
@@ -109,14 +115,14 @@ header > * {
         position:absolute;
         font-size:11px;
         font-weight:bold;
-        background-color: var(--lblue);
-        color:var(--dgray);
+        background-color: var(--sky);
+        color:var(--carbon);
         height: 1em;
         margin-top:.5em;
         align-items: center;
         }
     .contact-link {
-        color:var(--eggshell);
+        color:var(--neutral);
         font-size:100%;
     }
 }
@@ -132,15 +138,15 @@ header > * {
         position:absolute;
         font-size:20px;
         font-weight:bold;
-        background-color: var(--lblue);
-        color:var(--dgray);
+        background-color: var(--sky);
+        color:var(--carbon);
         height: 2em;
         margin-top:.5em;
         align-items: center;
         }
 
     .contact-link {
-        color:var(--eggshell);
+        color:var(--neutral);
         font-size:135%;
     }
 }

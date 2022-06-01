@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../styles/style.css';
 // TODO: Add an actual contact form
 export default function Contact() {
   return (
