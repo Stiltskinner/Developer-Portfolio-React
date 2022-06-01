@@ -1,12 +1,11 @@
 import React from "react";
-// import Project from '../Project'
+import Project from '../Project'
 import pigLogo from "../Assets/images/pigLogo.png";
 import thisDayLogo from "../Assets/images/onthisday_black.png";
 import weatherLogo from "../Assets/images/Weather-Dash-Image.jpg";
 import techLogo from "../Assets/images/techBlogDemo.gif";
 import textEditorLogo from "../Assets/images/textEditorLogo.JPG";
 import geographyLogo from "../Assets/images/geography-quiz-img.jpg";
-import gitHubLogo from "../Assets/images/GitHub-Mark-32px.png"
 
 const projects = [
   {
@@ -16,14 +15,6 @@ const projects = [
     gitHubUrl: "https://github.com/Stiltskinner/Pig-E-Bank",
     logo: pigLogo,
     description: "A Budgeting App Powered by SQL"
-  },
-  {
-    id: 2,
-    name: "This Day in History",
-    deployedUrl: "https://stiltskinner.github.io/This-Day-In-History/",
-    gitHubUrl: "https://github.com/Stiltskinner/This-Day-In-History",
-    logo: thisDayLogo,
-    description: "A History Trivia App"
   },
   {
     id: 2,
@@ -72,7 +63,7 @@ export default function Portfolio() {
     <section className="container-fluid row justify-content-center align-items-start mb-3 vw-100" id="sec-about-me" title="Portfolio">
       <div className="d-flex row col-lg-8 col-md-6 col-12 align-self-center">
       <h2 className="text-center col-12">Portfolio</h2>
-      {/* <Project projects={projects} /> */}
+      <Project projects={projects} />
       </div>
     </section>
 
