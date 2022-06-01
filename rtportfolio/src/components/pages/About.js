@@ -1,17 +1,19 @@
 import React from 'react';
+import profilePic from '../Assets/images/RyanProfilePic.jpg'
 // TODO: Add HTML and content to create actual about page
 export default function About() {
   return (
-    <div>
-      <h1>About Page</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
-    </div>
+<section className="container-fluid row justify-content-md-start justify-content-center mb-3" id="sec-about-me"
+      title="About Me">
+      <div className="col-lg-2 col-md-4 col-6 frame my-auto">
+        <img className="d-flex m-auto img-fluid" src={profilePic} alt="Ryan Thomas Profile Picture"/>
+      </div>
+      <div className="d-flex row col-lg-10 col-md-6 col-12">
+        <h2 className="text-center">Ryan Thomas</h2>
+        <p className="lead text-start mb-5">Full Stack Junior MERN Developer and former teacher with a passion for coding, learning, teaching, and solving problems. My combined technical and soft skills make me an asset for any team that needs someone flexible and proficient at leading others as well as taking direction. My graduate coursework in learning psychology helps me learn new skills by identifying gaps in my knowledge and efficiently filling those gaps. My training in education and teaching experience gives me a strong foundation for communication. If you want an ambitious, multi-talented hard-worker used to doing more with less, hire me</p>
+        <p className="lead text-start">Thank you for checking out my work, and please feel free to reach out with inquiries,
+          suggestions, job offers, or free cake.</p>
+      </div>
+    </section>
   );
 }
