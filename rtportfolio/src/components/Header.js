@@ -8,8 +8,8 @@ function Header({ currentPage, handlePageChange }) {
   return (
 <header className="p-3 mb-3 border-bottom">
     <div className="d-flex flex-wrap align-items-center justify-content-center">
-        <div className='col-3 px-2'><h1 className='text-start'>Ryan Thomas</h1></div>
-    <ul className="col-8 nav nav-tabs">
+        <div className='col-md-2 col-12'><h1 className='text-center'>Ryan Thomas</h1></div>
+    <ul className="col-md-8 col-12 nav nav-tabs">
       <li className="nav-item mx-auto">
         <a
           href="#about"
