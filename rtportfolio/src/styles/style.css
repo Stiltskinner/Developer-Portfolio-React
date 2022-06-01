@@ -25,6 +25,10 @@ header > * {
     background-color: var(--sky);
 }
 
+header h1 {
+    color: var(--slate)
+}
+
 .nav-link {
     color:var(--carbon);
     font-size:135%;

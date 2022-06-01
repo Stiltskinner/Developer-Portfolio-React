@@ -1,10 +1,10 @@
-// TODO: Replace imports for home with portfolio and blog with resume. Most like replace navtabs with header
+// TODO: Replace imports for Portfolio with portfolio and blog with resume. Most like replace navtabs with header
 
 import React, { useState } from 'react';
 import Header from './Header';
-import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
 import About from './pages/About';
-import Blog from './pages/Blog';
+import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 
 // General TODO List
@@ -14,20 +14,20 @@ import Contact from './pages/Contact';
 // Create a Project component to reuse for portfolio
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('About');
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
-    // TODO Set About to be default, replace home with portfolio
-    if (currentPage === 'Home') {
-      return <Home />;
+    // TODO Set About to be default, replace Home with portfolio
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
     }
     if (currentPage === 'About') {
       return <About />;
     }
     // TODO Replace blog with Resume
-    if (currentPage === 'Blog') {
-      return <Blog />;
+    if (currentPage === 'Resume') {
+      return <Resume />;
     }
     return <Contact />;
   };
