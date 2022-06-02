@@ -32,11 +32,14 @@ header h1 {
 
 .nav-link {
     color:var(--carbon);
-    font-size:135%;
 }
 
 .nav-link:hover {
     color: var(--watermelon);
+}
+
+.nav-text {
+    font-size: 135%;
 }
 
 /* Footer */
@@ -45,23 +48,6 @@ footer {
 }
 
 /* Images */
-.lg-proj-container {
-    max-height:25em;
-    transition: all 0.3s ease-in-out;
-    overflow:hidden;
-    object-fit: contain;
-}
-
-.lg-proj-container:hover {
-    box-shadow: inset 0px 0px 12px
-    rgb(96, 202, 235), 0 0 15px
-    rgb(138, 102, 236);
-}
-
-.lg-proj-container img {
-    height:100%;
-    object-fit: contain;
-}
 
 .proj-container {
     width:49%;
@@ -72,8 +58,8 @@ footer {
 
 .proj-container:hover {
     box-shadow: inset 0px 0px 12px
-    rgb(96, 202, 235), 0 0 15px
-    rgb(138, 102, 236);
+    var(--sky), 0 0 15px
+    var(--watermelon);
 }
 
 .proj-container img {
@@ -81,16 +67,6 @@ footer {
 }
 
 /* Link styling */
-.textlinks { 
-    display: flex;
-    position:absolute;
-    font-size:20px;
-    font-weight:bold;
-    background-color: var(--sky);
-    color:var(--carbon);
-    height: 2em;
-    margin-top:.5em;
-    }
 
 .header-link {
         color:var(--slate);
@@ -106,6 +82,14 @@ footer {
 /* Font Styling */
 .text-default {
     font-size: 150%;
+}
+
+.text-project {
+font-size: 135%;
+}
+
+.text-carbon {
+    color: var(--carbon)
 }
 
 /* Colors */
@@ -155,6 +139,7 @@ footer {
         color:var(--carbon);
         font-size:100%;
     }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -179,4 +164,5 @@ footer {
         color:var(--watermelon);
         font-size:135%;
     }
+    
 }

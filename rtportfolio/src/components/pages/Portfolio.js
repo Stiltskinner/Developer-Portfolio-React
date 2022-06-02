@@ -6,6 +6,9 @@ import weatherLogo from "../Assets/images/Weather-Dash-Image.jpg";
 import techLogo from "../Assets/images/techBlogDemo.gif";
 import textEditorLogo from "../Assets/images/textEditorLogo.JPG";
 import geographyLogo from "../Assets/images/geography-quiz-img.jpg";
+import gitHubLightLogo from "../Assets/images/GitHub-Mark-Light-120px-plus.png";
+import gitHubDarkLogo from "../Assets/images/GitHub-Mark-120px-plus.png";
+import gitHubBlueLogo from "../Assets/images/GitHub-Mark-120px-plus-blue.png";
 
 const projects = [
   {
@@ -14,7 +17,7 @@ const projects = [
     deployedUrl: "https://infinite-falls-27891.herokuapp.com/",
     gitHubUrl: "https://github.com/Stiltskinner/Pig-E-Bank",
     logo: pigLogo,
-    description: "A Budgeting App Powered by SQL"
+    gitHubLogo: gitHubDarkLogo
   },
   {
     id: 2,
@@ -22,7 +25,7 @@ const projects = [
     deployedUrl: "https://stiltskinner.github.io/This-Day-In-History/",
     gitHubUrl: "https://github.com/Stiltskinner/This-Day-In-History",
     logo: thisDayLogo,
-    description: "A History Trivia App"
+    gitHubLogo: gitHubBlueLogo
   },
   {
     id: 3,
@@ -30,7 +33,7 @@ const projects = [
     deployedUrl: "https://stiltskinner.github.io/Weather-Dashboard/",
     gitHubUrl: "https://github.com/Stiltskinner/Tech-Blog",
     logo: weatherLogo,
-    description: "A Weather Forecast App"
+    gitHubLogo: gitHubLightLogo
   },
   {
     id: 4,
@@ -38,7 +41,7 @@ const projects = [
     deployedUrl: "https://pure-temple-52601.herokuapp.com/",
     gitHubUrl: "https://github.com/Stiltskinner/Weather-Dashboard",
     logo: techLogo,
-    description: "A Full Stack Blog App"
+    gitHubLogo: gitHubLightLogo
   },
   {
     id: 5,
@@ -46,7 +49,7 @@ const projects = [
     deployedUrl: "https://enigmatic-reef-42603.herokuapp.com/",
     gitHubUrl: "https://github.com/Stiltskinner/PWA-Text-Editor",
     logo: textEditorLogo,
-    description: "A text editor Progressive Web App"
+    gitHubLogo: gitHubLightLogo
   },
   {
     id: 6,
@@ -54,17 +57,15 @@ const projects = [
     deployedUrl: "https://stiltskinner.github.io/Geography-Quiz/",
     gitHubUrl: "https://github.com/Stiltskinner/Geography-Quiz",
     logo: geographyLogo,
-    description: "A Geography Quiz App"
+    gitHubLogo: gitHubLightLogo
   },
 ]
 
 export default function Portfolio() {
   return (
-    <section className="container-fluid row justify-content-center align-items-start mb-3 vw-100" id="sec-about-me" title="Portfolio">
-      <div className="d-flex row col-lg-8 col-md-6 col-12 align-self-center">
+    <section className="container-fluid row col-12 justify-content-center flex-wrap mb-3" id="sec-about-me" title="Portfolio">
       <h2 className="text-center col-12">Portfolio</h2>
       <Project projects={projects} />
-      </div>
     </section>
 
     

@@ -1,18 +1,17 @@
 import React from "react";
-import gitHubLogo from "./Assets/images/GitHub-Mark-32px.png"
 
 export default function Project(props) {
   return (
     // Container for entire project card
-    <div>
+    <div className='col-12 row justify-content-center align-items-start'>
         {props.projects.map(item => (
-            <div className="container-fluid card col-lg-4 col-10" key={item.id}>
+            <div className="card col-4 m-2 blueborder proj-container p-0" key={item.id}>
         <img src={item.logo} className="card-img" alt="Project Logo" />
-        <div className="container-fluid card-img-overlay justify-content-center">
-          <div className="col-4 mx-auto">
-            <h2 className="card-title text-center col-12 sky-back">
+        <div className="container-fluid card-img-overlay justify-content-center ">
+          <div className="col-lg-4 col-12 mx-auto">
+            <h2 className="card-title text-center text-project sky-back">
               <a
-                className="nav-link fs-4"
+                className="nav-link"
                 href={item.deployedUrl}
                 target="_blank"
                 rel="noreferrer"
@@ -21,16 +20,13 @@ export default function Project(props) {
               </a>
             </h2>
           </div>
-          <p className="card-text col-5 mx-auto ">
-            {item.description}
-          </p>
-          <div className="col-1 mx-auto">
-            <a
+          <div className="col-lg-2 col-1 mx-auto">
+            <a 
               href={item.gitHubUrl}
               target="_blank"
               rel="noreferrer"
             >
-              <img src={gitHubLogo} />
+              <img src={item.gitHubLogo} />
             </a>
           </div>
         </div>

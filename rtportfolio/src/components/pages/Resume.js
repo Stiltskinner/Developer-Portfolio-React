@@ -4,7 +4,7 @@ import RTResume from "../Assets/RTResume.pdf";
 export default function Resume() {
   return (
     <section
-      className="container-fluid row justify-content-center align-items-start mb-3 vw-100"
+      className="container-fluid row justify-content-center align-items-start mb-3 col-12"
       id="sec-Resume"
       title="Resume"
     >
@@ -72,7 +72,7 @@ University of Texas at Austin
       <div className="d-flex row col-lg-10 col-md-7 col-12 align-self-center">
       <h3 className="text-center col-12 my-2 lgray-back">Work Experience</h3>
       <div className="lead text-center my-3 text-default col-12">
-          <div className="col-lg-4 col-12 mx-auto sky-back">
+          <div className="col-12 mx-auto sky-back">
           <h4 className='fw-bold'>English Team Leader, Teacher</h4>
           <h4>
             Akins Early College High School 
@@ -94,7 +94,7 @@ University of Texas at Austin
         </ul>
         </div>
         <div className="lead text-center my-3 text-default col-12 ">
-        <div className="col-lg-4 col-12 mx-auto sky-back">
+        <div className="col-12 mx-auto sky-back">
           <h4 className='fw-bold'>
 Presentations Coordinator, Writing Consultant
 </h4>
@@ -118,7 +118,7 @@ Presentations Coordinator, Writing Consultant
         </ul>
         </div>
         <div className="lead text-center my-3 text-default col-12">
-        <div className="col-lg-4 col-12 mx-auto sky-back">
+        <div className="col-12 mx-auto sky-back">
           <h4 className='fw-bold'>
           Client Services Coordinator
 </h4>
@@ -142,7 +142,7 @@ Presentations Coordinator, Writing Consultant
         </ul>
         </div>
         <div className="lead text-center my-3 text-default col-12">
-        <div className="col-lg-4 col-12 mx-auto sky-back">
+        <div className="col-12 mx-auto sky-back">
           <h4 className='fw-bold'>
           College Adviser
 </h4>
