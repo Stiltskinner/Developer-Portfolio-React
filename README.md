@@ -35,7 +35,6 @@
 ## About The Project
 I built this portfolio using React.js to showcase my projects, resume, and a little about myself.
 
-### Screenshot
 ![Portfolio Screen Shot](./React-Portfolio-Demo.gif)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
