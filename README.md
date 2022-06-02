@@ -35,11 +35,8 @@
 ## About The Project
 I built this portfolio using React.js to showcase my projects, resume, and a little about myself.
 
-### Desktop Screenshot
-[![Portfolio Screen Shot][product-screenshot]](https://stiltskinner.github.io/Portfolio-v2/)
-
-### Responsive Design Demo - Mobile Friendly Screenshot
-[![Mobile Portfolio Screen Shot][mobile-product-screenshot]](https://stiltskinner.github.io/Portfolio-v2/)
+### Screenshot
+![Portfolio Screen Shot](./React-Portfolio-Demo.gif)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -85,5 +82,3 @@ Project Link: [https://stiltskinner.github.io/Developer-Portfolio-React/](https:
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [license-shield]: https://img.shields.io/github/license/Stiltskinner/Portfolio-v2.svg?style=for-the-badge
 [license-url]: https://github.com/Stiltskinner/Portfolio-v2/blob/main/LICENSE
-[product-screenshot]: https://github.com/Stiltskinner/Portfolio-v2/blob/main/Assets/images/Portfolio%20Screenshot.png
-[mobile-product-screenshot]: https://github.com/Stiltskinner/Portfolio-v2/blob/main/Assets/images/Portfolio-Mobile-Screenshot.gif
