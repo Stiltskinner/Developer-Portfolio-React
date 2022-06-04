@@ -47,6 +47,10 @@ footer {
     min-height: 5em;
 }
 
+.footer-link {
+    color:var(--slate);
+}
+
 /* Images */
 
 .proj-container {
