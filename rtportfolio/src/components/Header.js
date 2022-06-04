@@ -50,7 +50,7 @@ function Header({ currentPage, handlePageChange }) {
               Resume
             </a>
           </li>
-          <li className="nav-item mx-auto nav-text">
+          {/* <li className="nav-item mx-auto nav-text">
             <a
               href="#contact"
               onClick={() => handlePageChange("Contact")}
@@ -61,7 +61,7 @@ function Header({ currentPage, handlePageChange }) {
             >
               Contact
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </header>

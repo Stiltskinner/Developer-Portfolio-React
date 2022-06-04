@@ -34,6 +34,10 @@ header h1 {
     color:var(--carbon);
 }
 
+.nav-tabs {
+    border: none;
+}
+
 .nav-link:hover {
     color: var(--watermelon);
 }
@@ -44,20 +48,22 @@ header h1 {
 
 /* Footer */
 footer {
-    min-height: 5em;
+    min-height: 3em;
 }
 
 .footer-link {
     color:var(--slate);
 }
 
-/* Images */
+/* Portfolio Projects */
 
 .proj-container {
     width:49%;
+    min-height: 7em;
     max-height:25em;
     transition: all 0.3s ease-in-out;
     overflow:hidden;
+    object-fit:cover;
 }
 
 .proj-container:hover {
@@ -67,7 +73,43 @@ footer {
 }
 
 .proj-container img {
-    object-fit: cover;
+    margin-top: auto;
+    margin-bottom:auto;
+}
+
+.proj-name {
+    border-radius: 8px;
+}
+
+.proj-name:hover {
+    box-shadow: inset 0px 0px 12px
+    var(--neutral), 0 0 15px
+    var(--watermelon);
+}
+
+.proj-link {
+    color:var(--carbon);
+    text-decoration: none;
+}
+
+.proj-link:hover {
+    color: var(--watermelon);
+}
+
+.git-logo {
+    width:fit-content;
+}
+
+.git-logo:hover {
+    box-shadow: inset 0px 0px 12px
+    var(--neutral), 0 0 15px
+    var(--watermelon);
+    border-radius: 8px;
+}
+
+.git-logo img {
+    width: 4em;
+    object-fit:contain;
 }
 
 /* Link styling */
@@ -121,52 +163,30 @@ font-size: 135%;
     border-color:var(--neutral);
 }
 
-@media screen and (min-width: 0px) {
-    main {
+@media screen and (max-width: 768px) {
+
+    .proj-container {
+        width:20em;
+        transition: all 0.3s ease-in-out;
+        overflow:hidden;
+        object-fit:contain;
+    }
+    .text-project {
+        font-size: 50%;
+    }
+
+    .git-logo img {
+        width: 1em;
+        object-fit:contain;
+    }
+
+    footer {
+        min-height: .5em;
         flex-direction:column;
     }
-    .border-neutral {
-        border-style: none;
-    }
-    .textlinks { 
-        display: flex;
-        position:absolute;
-        font-size:11px;
-        font-weight:bold;
-        background-color: var(--sky);
-        color:var(--carbon);
-        height: 1em;
-        margin-top:.5em;
-        align-items: center;
-        }
-    .contact-link {
-        color:var(--carbon);
-        font-size:100%;
-    }
-
-}
-
-@media screen and (min-width: 768px) {
-    .border-neutral {
-        border-right: 3px;
-        border-style: solid;
-    }
-
-    .textlinks { 
-        display: flex;
-        position:absolute;
-        font-size:20px;
-        font-weight:bold;
-        background-color: var(--sky);
-        color:var(--carbon);
-        height: 2em;
-        margin-top:.5em;
-        align-items: center;
-        }
-
-    .contact-link {
-        color:var(--watermelon);
-        font-size:135%;
+    
+    .footer-link {
+        font-size: 50%;
     }
     
 }
