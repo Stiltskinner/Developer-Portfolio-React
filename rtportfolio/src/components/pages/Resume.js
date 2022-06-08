@@ -24,7 +24,7 @@ export default function Resume() {
           <p className="fw-bold">Languages, Libraries, Frameworks</p>
           <p>
           Javascript | HTML5 | CSS3 | jQuery |
-          jQueryUI | Bootstrap | Handlebars | Node.js | Express.js | 
+          jQueryUI | Bootstrap | Webpack | Node.js | Express.js | 
           Git | SQL | Sequelize | Mongoose | NoSQL | MongoDB | GraphQL | React.js
           </p>
         </div>
