@@ -40,7 +40,7 @@ export default function Resume() {
       <div className="lead text-center my-3 text-default col-lg-4 col-12 sky-back">
           <p className="fw-bold">Full Stack MERN Bootcamp</p>
           <p>
-            University of Texas at Austin/Trilogy 
+            University of Texas at Austin 
           </p>
           <p>
             March 2022 - June 2022 
