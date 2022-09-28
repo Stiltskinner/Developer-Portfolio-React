@@ -1,6 +1,5 @@
 import React from "react";
 import RTResume from "../Assets/RTResume.pdf";
-// TODO Add HTML and content to make Resume/skills list, replace blog with resume
 export default function Resume() {
   return (
     <section
