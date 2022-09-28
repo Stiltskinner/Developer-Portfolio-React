@@ -9,9 +9,17 @@ export default function Resume() {
       title="Resume"
     >
         <h2 className="text-center col-12">Resume</h2>
-        <a className="d-flex header-link flex-wrap justify-content-center col-3" href={RTResume} download>
-          <p className="text-center">Click to download!</p>
+            <div className="d-flex col-12 justify-content-center">
+            <a className="d-flex header-link flex-wrap justify-content-center resume-page-link text-center" href={RTResume} download>
+            Click to download resume
       </a>
+            </div>
+            <div className="d-flex col-12 justify-content-center">
+            <a className="d-flex header-link flex-wrap justify-content-center resume-page-link" href="https://gist.github.com/Stiltskinner/957834ed7b69908d00aa60b2d93701f8" target="_blank" rel="noreferrer noopener">
+          <p className="text-center">Click to view technical writing sample</p>
+      </a>
+            </div>
+
       <div className="d-flex row col-lg-10 col-md-7 col-12 align-self-center">
         <h3 className="text-center col-12 my-2 lgray-back">Technical Skills</h3>
         <div className="lead text-center my-3 text-default col-lg-4 col-12 ">
@@ -71,6 +79,30 @@ University of Texas at Austin
 
       <div className="d-flex row col-lg-10 col-md-7 col-12 align-self-center">
       <h3 className="text-center col-12 my-2 lgray-back">Work Experience</h3>
+      {/* Technical Consultant at Kibo Section */}
+      <div className="lead text-center my-3 text-default col-12">
+          <div className="col-12 mx-auto sky-back">
+          <h4 className='fw-bold'>Technical Consultant</h4>
+          <h4>
+            Kibo Commerce Inc. 
+          </h4>
+          <h4>
+            July 2022 - September 2022
+          </h4>
+          </div>
+        <ul className="text-start">
+          <li>
+          Built custom solutions for digital storefronts, integrating their e-commerce presence with the Kibo Commerce API/Order Management System using JavaScript, HTML, and CSS.
+          </li>
+          <li>
+          Managed software integrations for complex e-commerce workflows, including shipping, inventory management, product catalogs, personalization, search, and more.
+          </li>
+          <li>
+          Performed data management using the Kibo API, including writing custom functions to create new data entries and update existing ones.
+          </li>
+        </ul>
+        </div>
+      {/* English Teaching Section */}
       <div className="lead text-center my-3 text-default col-12">
           <div className="col-12 mx-auto sky-back">
           <h4 className='fw-bold'>English Team Leader, Teacher</h4>
@@ -102,6 +134,7 @@ University of Texas at Austin
           </li>
         </ul>
         </div>
+        {/* Presentations Coordinator Section */}
         <div className="lead text-center my-3 text-default col-12 ">
         <div className="col-12 mx-auto sky-back">
           <h4 className='fw-bold'>
@@ -126,6 +159,7 @@ Presentations Coordinator, Writing Consultant
           </li>
         </ul>
         </div>
+        {/* CSC Section */}
         <div className="lead text-center my-3 text-default col-12">
         <div className="col-12 mx-auto sky-back">
           <h4 className='fw-bold'>
@@ -153,6 +187,7 @@ Presentations Coordinator, Writing Consultant
           </li>
         </ul>
         </div>
+        {/* College Adviser Section */}
         <div className="lead text-center my-3 text-default col-12">
         <div className="col-12 mx-auto sky-back">
           <h4 className='fw-bold'>

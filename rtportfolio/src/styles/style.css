@@ -125,6 +125,10 @@ footer {
 
 }
 
+.resume-page-link {
+    max-width:fit-content;
+}
+
 /* Font Styling */
 .text-default {
     font-size: 150%;
